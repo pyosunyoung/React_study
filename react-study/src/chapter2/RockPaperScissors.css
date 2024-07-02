@@ -1,0 +1,35 @@
+.box{
+  border: 1px solid black;
+  width: 500px;
+  height: 600px; /* 고정 높이 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px; /* 박스 간 간격 추가 */
+}
+
+.item-img {
+  width: 400px;
+  height: 400px; /* 이미지 크기 고정 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 박스에 맞춤 */
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* 두 main div 간 간격 추가 */
+}
+
+.win {
+  border: 10px solid green;
+  color: green;
+}
+.lose {
+  border: 10px solid red;
+  color: red;
+}
+.tie {
+  border: 10px solid black;
+  color: black;
+}

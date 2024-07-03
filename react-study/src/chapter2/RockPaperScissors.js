@@ -81,7 +81,7 @@ const RockPaperScissors = () => {
     if(userScore === 3) {
       Swal.fire({
         title: "승리!",
-        text: "축하합니다! 3판 2선 승제로 승리하셨습니다.",
+        text: "축하합니다! 승리하셨습니다.",
         icon: "success",
         timer: 1500,
         didClose: resetGame
@@ -89,7 +89,7 @@ const RockPaperScissors = () => {
     } else if(computerScore === 3) {
       Swal.fire({
         title: "패배ㅠㅠ",
-        text: "컴퓨터가 3판 2선 승제로 승리하였습니다.",
+        text: "컴퓨터가 승리하였습니다.",
         icon: "error",
         timer: 1500,
         didClose: resetGame

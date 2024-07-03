@@ -10,10 +10,36 @@ const Box = (props) => {
   // } else {
   //   result = props.result
   // }
+  // let result = 0;
+  // if(props.title === "You" && props.result !== "tie" && props.result !== "") {
+  //   result = props.result === "win" ? result + 1 :
+  //   console.log(result)
+    
+  // } else {
+    
+  // }
+
+  // if(result === 3) {
+  //   Swal.fire({
+  //     title: "이겼습니다!",
+  //     text: "스코어 ",
+  //     icon: "success",
+  //     timer: 1500,
+      
+  //   });
+  // } else {
+  //   Swal.fire({
+  //     title: "졌습니다ㅠㅠ!",
+  //     text: "다음문제로 넘어가세요!",
+  //     icon: "error",
+  //     timer: 1500,
+      
+  //   });
+  // }
   return (
     <div className={`box ${props.result}`}>
       <h1>{props.title}</h1>
-      <img className='item-img' src={props.item && props.item.img}/> 
+      <img className='item-img' src={props.item && props.item.img} alt=''/> 
       <h2>{props.result}</h2>
     </div>
     

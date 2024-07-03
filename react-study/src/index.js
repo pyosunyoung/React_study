@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import RockPaperScissorsClass from './chapter2/RockPaperScissorsClass';
+import RockPaperScissors from './chapter2/RockPaperScissors';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
-    <RockPaperScissorsClass/>
+    <RockPaperScissors/>
   </React.StrictMode>
 );
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Box from './component/Box'
 import './RockPaperScissors.css'
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
 // 1.박스 2개(타이틀, 사진, 결과)
 // 2. 가위 바위 보 버튼이 있다
 // 3. 버튼을 클릭하면 클릭한 값이 박스에 보임
@@ -122,6 +123,9 @@ const RockPaperScissors = () => {
       <Box title="Computer" item={computerSelect} result={result && (result === 'win' ? 'lose' : result === 'lose' ? 'win' : 'tie')}/>
     </div>
     <div className='main'>
+    <div className='Previous_page'>
+        <Link to={'/'} className='Previous-btn'>Previous page</Link>
+      </div>
       <button onClick={() => play("scissors")}>✌</button>
       <button onClick={() => play("rock")}>✊</button>
       <button onClick={() => play("paper")}>✋</button>

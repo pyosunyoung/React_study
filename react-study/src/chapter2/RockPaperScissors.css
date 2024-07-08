@@ -3,9 +3,13 @@
 *{
   font-family: 'Galactic Storm Halftone', sans-serif;
 }
+body {
+  background-color: black;
+}
 header {
   text-align: center;
   font-size: 70px;
+  color: white;
 }
 
 .score {
@@ -19,14 +23,16 @@ header {
 .score h1 {
   margin-left: 100px;
   margin-right: 100px;
+  color: white;
 }
 
 .score p {
   font-size: 24px;
   padding: 10px; /* 텍스트와 테두리 사이의 여백 설정 */
-  border: 1px solid black; /* 테두리 스타일 설정 */
+  border: 1px solid white; /* 테두리 스타일 설정 */
   width: 150px; /* 원하는 너비 설정 */
   text-align: center; /* 가운데 정렬 */
+  background-color: white;
   
 }
 .score p:nth-of-type(1) {
@@ -58,6 +64,7 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 20px; /* 두 main div 간 간격 추가 */
+  position: relative;
 }
 
 .win {
@@ -69,11 +76,12 @@ header {
   color: red;
 }
 .tie {
-  border: 10px solid black;
-  color: black;
+  border: 10px solid white;
+  color: white;
 }
 
 button{
+  
   width: 60px;
   height: 60px;
   border: none;
@@ -87,3 +95,32 @@ button{
 button:hover{
   scale: 1.1;
 }
+
+.Previous-btn{
+  display: inline-block;
+  text-align: center;
+margin:10px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px ;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  -webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+-o-border-radius: 7px;
+border-radius: 7px;
+  box-shadow: 0 .2em gray; 
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 40px;
+}
+.Previous-btn:active {
+box-shadow: none;
+position: relative;
+top: .2em;
+}
+.Previous_page {
+  position: absolute;
+  left: 0;
+}
+

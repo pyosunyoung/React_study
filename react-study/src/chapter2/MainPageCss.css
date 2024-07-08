@@ -1,0 +1,52 @@
+.mainContainer{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  font-size: 100px;
+  text-align: center; 
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  
+}
+
+.mainTitle {
+  margin: -80px /* Adjust the top and bottom margins as needed */
+}
+
+
+.mainContainer span h1 {
+  font-size: 30px;
+  color: gray;
+}
+
+
+
+.mainContainer h2 {
+  font-size: 30px;
+  color: gray;
+}
+
+.start-btn{
+  text-align: center;
+display: inline-block;
+margin:10px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px ;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  -webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+-o-border-radius: 7px;
+border-radius: 7px;
+  box-shadow: 0 .2em gray; 
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 60px;
+}
+.start-btn:active {
+box-shadow: none;
+position: relative;
+top: .2em;
+}

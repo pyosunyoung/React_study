@@ -3,12 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import RockPaperScissors from './chapter2/RockPaperScissors';
-import AppClass from './chapter3/AppClass';
-import FunctionComponent from './chapter3/FunctionComponent';
+import MainPage from './chapter2/MainPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <FunctionComponent/>
+<>
+    <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/RockPaperScissors" element={<RockPaperScissors />} />
+    </Routes>
+    </BrowserRouter>
+</>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,4 +1,4 @@
-가위바위보 게임! ✌✊✋
+가위바위보 게임! ✌✊✋ <br/>
 규칙 : 3선승제 (3승시 게임 리셋)
 링크 : 
 https://rock-paper-scissors-game-3win.netlify.app/
